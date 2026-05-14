@@ -1,0 +1,28 @@
+﻿<Window x:Class="lab_9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="359" Width="450">
+    <Grid>
+        <TextBlock x:Name="Tri1" HorizontalAlignment="Left" Margin="50,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="175"><Run Text="Площадь 1 "/><LineBreak/><Run Text="треугольника:"/></TextBlock>
+        <TextBlock x:Name="Tri2" HorizontalAlignment="Left" Margin="260,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="175"><Run Text="Площадь 2 "/><LineBreak/><Run Text="треугольника:"/></TextBlock>
+        <TextBox x:Name="SideA" HorizontalAlignment="Left" Margin="50,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" RenderTransformOrigin="1.05,0.511" TextChanged="SideA_Changed" Height="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,30,0,0" TextWrapping="Wrap" Text="Сторона A" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,83,0,0" TextWrapping="Wrap" Text="Сторона B" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="260,30,0,0" TextWrapping="Wrap" Text="Сторона A" VerticalAlignment="Top"/>
+        <TextBox x:Name="SideA_2" Margin="260,51,50,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="SideA2_Changed" Height="18"/>
+        <TextBox x:Name="SideB_2" Margin="260,104,50,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="SideB2_Changed" Height="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="260,83,0,0" TextWrapping="Wrap" Text="Сторона B" VerticalAlignment="Top"/>
+        <TextBox x:Name="SideB" HorizontalAlignment="Left" Margin="50,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" RenderTransformOrigin="1.05,0.511" TextChanged="SideB_Changed" Height="18"/>
+        <Button x:Name="Plus_1" Content="Умножить стороны на 2" HorizontalAlignment="Left" Margin="50,190,0,0" VerticalAlignment="Top" Click="Plus_1_Click"/>
+        <Button x:Name="Minus_1" Content="Поделить стороны на 2" HorizontalAlignment="Left" Margin="50,220,0,0" VerticalAlignment="Top" Width="136" Click="Minus_1_Click"/>
+        <Button x:Name="Plus_2" Content="Умножить стороны на 2" HorizontalAlignment="Left" Margin="260,190,0,0" VerticalAlignment="Top" Click="Plus_2_Click"/>
+        <Button x:Name="Minus_2" Content="Поделить стороны на 2" Margin="260,220,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Click="Minus_2_Click"/>
+        <TextBlock x:Name="Status" Margin="25,285,25,0" TextWrapping="Wrap" Text="Здесь отображается статус выполненых операций" VerticalAlignment="Top" RenderTransformOrigin="0.518,0.378" TextAlignment="Center"/>
+        <Button x:Name="Compare" Content="Сравнить треугольники" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.498,-0.098" Click="Compare_Click"/>
+
+    </Grid>
+</Window>
